@@ -26,7 +26,7 @@ can_frame ParserRos2Can4RequestSpeed::parse(const geometry_msgs::Twist &data)
 
   float fspeed;
 //  fspeed = data.linear.x + data.angular.z;
-  if(m_is_left)
+  if(!m_is_left)
     fspeed = data.linear.x - data.angular.z;
   else
     fspeed = data.linear.x + data.angular.z;
