@@ -14,7 +14,7 @@
 class ParserRos2Can4RequestSpeed : public IParserRos2Can<geometry_msgs::Twist>
 {
 public:
-  ParserRos2Can4RequestSpeed(IT_CAN* it_can, const canid_t can_id, ros::NodeHandle& node, const char* name, const size_t size, const double isLeft, const float vel_max_mm_s = 100);
+  ParserRos2Can4RequestSpeed(IT_CAN* it_can, const canid_t can_id, ros::NodeHandle& node, const char* name, const size_t size, const double isLeft, const float vel_max_mm_s = 500);
   virtual ~ParserRos2Can4RequestSpeed();
 
   // IParserRos2Can interface
