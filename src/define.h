@@ -7,7 +7,8 @@
 //        ::: DEFINITION TOPIC :::
 #define     TOPIC_IMU                       "ibot_can_imu"
 #define     TOPIC_ALARME_BATTERIE           "ibot_can_battery_alarm"
-#define     TOPIC_CMD_MOTOR                 "secure_twist"
+// #define     TOPIC_CMD_MOTOR                 "secure_twist" FOR THE DEMO
+#define     TOPIC_CMD_MOTOR                 "cmd_vel"
 
 //        __________________________
 //        ::: DEFINITION SERVICE :::
